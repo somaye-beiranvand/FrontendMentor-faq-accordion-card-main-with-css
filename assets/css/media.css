@@ -2,11 +2,11 @@
 }
 
 @media (min-width: 768px) {
-  .sm-box {
+  .sm-faq-wrapper {
     max-width: 680px;
     margin-top: 0;
   }
-  .sm-faq-box {
+  .sm-faq-text-wrapper {
     padding-top: 5rem !important;
     padding-bottom: 6rem !important;
     height: 500px;
@@ -20,17 +20,17 @@
     top: 233px;
     z-index: 1000;
   }
-  .sm-faq-box {
+  .sm-faq-text-wrapper {
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
 }
 
 @media (min-width: 992px) {
-  .sm-box {
+  .sm-faq-wrapper {
     max-width: 880px;
   }
-  .sm-faq-box {
+  .sm-faq-text-wrapper {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
@@ -49,10 +49,10 @@
 }
 
 @media (min-width: 1200px) {
-  .sm-box {
+  .sm-faq-wrapper {
     max-width: 920px;
   }
-  .sm-faq-box {
+  .sm-faq-text-wrapper {
     padding-left: 4.5rem !important;
     padding-right: 4.5rem !important;
   }

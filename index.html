@@ -14,8 +14,8 @@
 
 <body>
 
-    <div class="container d-flex align-items-center p-3 px-md-0">
-        <div class="sm-box w-100">
+    <div class="container d-flex align-items-center justify-content-center p-3 px-md-0">
+        <div class="sm-faq-wrapper w-100">
             <div class="row mx-0">
                 <div class="col-6 col-md-5 p-0 d-none d-md-block">
                     <div class="sm-faq-img-desktop">
@@ -26,83 +26,76 @@
                     <div class="sm-faq-img-mobile"></div>
                 </div>
                 <div class="col-12  col-md-7 mt-4 mt-md-0 p-0">
-                    <div class="sm-faq-box px-4 px-md-2 pb-5">
+                    <div class="sm-faq-text-wrapper px-4 px-md-2 pb-5">
                         <div class="row flex-column">
                             <div class="col">
-                                <div class="h2 text-center text-md-start sm-fw-bold">
+                                <h1 class="h2 text-center text-md-start sm-text-title">
                                     FAQ
-                                </div>
+                                </h1>
                             </div>
                             <div class="col">
                                 <!-- component::faq-item starts -->
-                                <div class="sm-faq-item w-100">
-                                    <div class="sm-faq-head d-flex justify-content-between align-items-center py-3">
-                                        <span class="pe-1">How many team members can I
-                                            invite</span>
-                                        <img class="sm-down-icon" src="assets/images/icon-arrow-down.svg" alt="">
-                                    </div>
-                                    <div class="sm-faq-body pt-3">
-                                        You can invite up to 2 additional users on the Free plan. There is no limit
-                                        on
+                                <details class="sm-faq-item">
+                                    <summary class="sm-faq-head">
+                                        How many team members can I invite?
+                                    </summary>
+                                    <p class="sm-faq-body pt-3">
+                                        You can invite up to 2 additional users on the Free plan. There is no limit on
                                         team members for the Premium plan.
-                                    </div>
-                                </div>
+                                    </p>
+                                </details>
                                 <!-- component::faq-item ends -->
                             </div>
                             <div class="col">
                                 <!-- component::faq-item starts -->
-                                <div class="sm-faq-item w-100">
-                                    <div class="sm-faq-head d-flex justify-content-between align-items-center py-3">
-                                        <span class="w-95 pe-1">What is the maximum file upload size?</span>
-                                        <img class="sm-down-icon" src="assets/images/icon-arrow-down.svg" alt="">
-                                    </div>
-                                    <div class="sm-faq-body pt-3">
+                                <details class="sm-faq-item" open>
+                                    <summary class="sm-faq-head">
+                                        What is the maximum file upload size?
+                                    </summary>
+                                    <p class="sm-faq-body pt-3">
                                         No more than 2GB. All files in your account must fit your allotted storage
                                         space.
-                                    </div>
-                                </div>
+                                    </p>
+                                </details>
                                 <!-- component::faq-item ends -->
                             </div>
                             <div class="col">
                                 <!-- component::faq-item starts -->
-                                <div class="sm-faq-item w-100">
-                                    <div class="sm-faq-head d-flex justify-content-between align-items-center py-3">
-                                        <span class="w-95 pe-1">How do I reset my password?</span>
-                                        <img class="sm-down-icon" src="assets/images/icon-arrow-down.svg" alt="">
-                                    </div>
-                                    <div class="sm-faq-body pt-3">
+                                <details class="sm-faq-item">
+                                    <summary class="sm-faq-head">
+                                        How do I reset my password?
+                                    </summary>
+                                    <p class="sm-faq-body pt-3">
                                         Click “Forgot password” from the login page or “Change password” from your
                                         profile page.
                                         A reset link will be emailed to you.
-                                    </div>
-                                </div>
+                                    </p>
+                                </details>
                                 <!-- component::faq-item ends -->
                             </div>
                             <div class="col">
                                 <!-- component::faq-item starts -->
-                                <div class="sm-faq-item w-100">
-                                    <div class="sm-faq-head d-flex justify-content-between align-items-center py-3">
-                                        <span class="w-95 pe-1">Can I cancel my subscription?</span>
-                                        <img class="sm-down-icon" src="assets/images/icon-arrow-down.svg" alt="">
-                                    </div>
-                                    <div class="sm-faq-body pt-3">
+                                <details class="sm-faq-item">
+                                    <summary class="sm-faq-head">
+                                        Can I cancel my subscription?
+                                    </summary>
+                                    <p class="sm-faq-body pt-3">
                                         Yes! Send us a message and we’ll process your request no questions asked.
-                                    </div>
-                                </div>
+                                    </p>
+                                </details>
                                 <!-- component::faq-item ends -->
                             </div>
                             <div class="col">
                                 <!-- component::faq-item starts -->
-                                <div class="sm-faq-item w-100">
-                                    <div class="sm-faq-head d-flex justify-content-between align-items-center py-3">
-                                        <span class="w-95 pe-1">Do you provide additional support?</span>
-                                        <img class="sm-down-icon" src="assets/images/icon-arrow-down.svg" alt="">
-                                    </div>
-                                    <div class="sm-faq-body pt-3">
+                                <details class="sm-faq-item">
+                                    <summary class="sm-faq-head">
+                                        Do you provide additional support?
+                                    </summary>
+                                    <p class="sm-faq-body pt-3">
                                         Chat and email support is available 24/7. Phone lines are open during normal
                                         business hours.
-                                    </div>
-                                </div>
+                                    </p>
+                                </details>
                                 <!-- component::faq-item ends -->
                             </div>
                         </div>
@@ -111,9 +104,6 @@
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
