@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL on frontendmentor](https://www.frontendmentor.io/solutions/responsive-faqaccordioncard-using-jquery-and-bootsrtapcomponent-based-dz0liCk_dI)
-- Live Site URL: [live site URL](https://somaye-beiranvand.github.io/faq-accordion-card-main/)
+- Live Site URL: [live site URL](https://somaye-beiranvand.github.io/faq-accordion-card-main-with-css/)
 
 ## My process
 
@@ -36,57 +36,32 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [jquery](https://jquery.com/) - JS library
 - [bootstrap](https://getbootstrap.com/) - For styles
 
 ### What I learned
 
 ```html
 <!-- component::faq-item starts -->
-<div class="sm-faq-item w-100">
-  <div
-    class="sm-faq-head d-flex justify-content-between align-items-center p-3 ps-0"
-  >
-    <span class="w-95 pe-1">How many team members can I invite</span>
-    <img class="sm-down-icon" src="assets/images/icon-arrow-down.svg" alt="" />
-  </div>
-  <div class="sm-faq-body pt-2">
+<details class="sm-faq-item">
+  <summary class="sm-faq-head">How many team members can I invite?</summary>
+  <p class="sm-faq-body pt-3">
     You can invite up to 2 additional users on the Free plan. There is no limit
     on team members for the Premium plan.
-  </div>
-</div>
+  </p>
+</details>
 <!-- component::faq-item ends -->
 ```
 
 ```css
-body {
-  min-height: 100vh;
-  background-image: linear-gradient(
-    var(--sm-first-color),
-    var(--sm-second-color)
-  );
-  background-repeat: no-repeat;
+.sm-faq-item[open] .sm-faq-head::after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-.sm-faq-img-desktop {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background: url(../images/illustration-woman-online-desktop.svg) -77px 38px
-      no-repeat, url(../images/bg-pattern-desktop.svg) -383px -219px no-repeat;
-  background-size: 120%, 200%;
-  position: relative;
-}
-```
-
-```js
-$(".sm-faq-head").on("click", function () {
-  $(this).children(".sm-down-icon").toggleClass("rotate");
-});
 ```
 
 ### Useful resources
 
-- [resource 1](https://www.w3schools.com/css/tryit.asp?filename=trycss3_background_multiple3) - This helped me learn how to use multiple background images for one element
+- [resource 1](https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/) - This helped me learn how to use summary and details tags to make accordion.
 
 ## Author
 
