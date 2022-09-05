@@ -59,6 +59,12 @@ Users should be able to:
 }
 ```
 
+```javascript
+$("details").on("click", function () {
+  $(this).parent().siblings().children().removeAttr("open");
+});
+```
+
 ### Useful resources
 
 - [resource 1](https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/) - This helped me learn how to use summary and details tags to make accordion.
