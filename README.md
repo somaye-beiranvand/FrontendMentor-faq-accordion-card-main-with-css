@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL on frontendmentor](https://www.frontendmentor.io/solutions/faq-accordion-card-solutionpure-css-rx2p5y5OF5)
-- Live Site URL: [live site URL](https://somaye-beiranvand.github.io/FrontendMentor-faq-accordion-card-main-with-css/)
+- Live Site URL: [faq-accordion-card-main-with-css](https://somaye-beiranvand.github.io/FrontendMentor-faq-accordion-card-main-with-css/)
 
 ## My process
 
